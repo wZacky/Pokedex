@@ -181,8 +181,7 @@ function displayModal(pokemon, typeTag) {
         .then(response => {
             console.log("el name: ->>" + response.data.name)
             modal.style.display = "flex";
-            //pokemon.value = "";
-            //pokemon.placeholder = "e.g.: Meowth";
+            
             let foundPokemon = response.data;
             let imagePokemon = foundPokemon.sprites.other["official-artwork"].front_default;
             let pathImage = "";

@@ -18,7 +18,6 @@
 }
 
 #pokemonCard {
-    /* Created with https://www.css-gradient.com */
     background: #F5F5F5;
     background: -webkit-linear-gradient(top left, #F5F5F5, #DDE5F2);
     background: -moz-linear-gradient(top left, #F5F5F5, #DDE5F2);
@@ -33,7 +32,6 @@
     width: 100%;
     height: 200px;
     object-fit: contain;
-    /*object-position: unset;*/
 }
 
 #pokemonCard h3{
@@ -141,7 +139,6 @@ input {
 }
 
 #modal::backdrop{
-    /* Created with https://www.css-gradient.com */
     background: #7FFFD4;
     background: -webkit-linear-gradient(top left, #7FFFD4, #0985E3);
     background: -moz-linear-gradient(top left, #7FFFD4, #0985E3);

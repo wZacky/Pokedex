@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <title>Pokedex</title>
+</head>
+
+<body>
+    <nav>
+        <p>PoKéMoN</p>
+    </nav>
+
+    <section id="searchNavigation">
+        <div>
+            <label>Choose a pokemon from this list:</label>
+            <input list="pokemons" name="myPoKemon" id="inputPokemon" />
+
+            <datalist id="pokemons">
+                <!-- <option value="Chrome">
+                <option value="Firefox">
+                <option value="Internet Explorer">
+                <option value="Opera">
+                <option value="Safari">
+                <option value="Microsoft Edge"> -->
+            </datalist>
+        </div>
+        
+        <div id="navegationButtons">
+            <button id="buttonPrevius">Previous</button>
+            <button id="buttonNext">Next</button>
+        </div>
+        
+    </section>
+
+    <div id="container">
+
+    </div>
+
+    <dialog id="modal">
+        <section id="imageModal">
+            
+        </section>
+        <section>
+            <h3 id="namePokemon"></h3>
+            <p id="experiencePokemon"></p>
+            <p id="heightPokemon"></p>
+            <p id="weightPokemon"></p>
+
+            <details>
+                <summary>Types</summary>
+                <ol id="listTypes">
+                
+                </ol>
+            </details>
+    
+            <details>
+                <summary>Abilities</summary>
+                <ol id="listAbilities">
+                
+                </ol>
+            </details>
+    
+            <details>
+                <summary>Moves</summary>
+                <ol id="listMoves">
+
+                </ol>
+            </details>
+        </section>
+
+        <button id="confirmBtn" value="ok">X</button>
+    </dialog>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>

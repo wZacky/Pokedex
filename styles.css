@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100&display=swap');
+
+@font-face {
+    font-family: 'Pokemon Solid';
+    src: url('./fonts/Pokemon\ Solid.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
+
+    margin-top: 26px;
+}
+
+#pokemonCard {
+    /* Created with https://www.css-gradient.com */
+    background: #F5F5F5;
+    background: -webkit-linear-gradient(top left, #F5F5F5, #DDE5F2);
+    background: -moz-linear-gradient(top left, #F5F5F5, #DDE5F2);
+    background: linear-gradient(to bottom right, #F5F5F5, #DDE5F2);
+
+    border-radius: 5%;
+
+    cursor: url(./images/pokeball.cur), pointer;
+}
+
+#pokemonCard img{
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    /*object-position: unset;*/
+}
+
+#pokemonCard h3{
+    padding-left: 10px;
+}
+
+#container > div:hover{
+    background: aquamarine;
+    transition-duration: 1s;
+    /*text-align: center;*/
+}
+
+body{
+    font-family: 'JetBrains Mono', monospace;
+}
+
+nav {
+    font-family: 'Pokemon Solid';
+    position: fixed;
+    background-color: aquamarine;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    font-size: 38px;
+}
+
+nav p{
+    margin: 0;
+    text-align: center;
+}
+
+input {
+    font-family: 'Pokemon Solid';
+    outline: none;
+    font-size: 12px;
+    border-radius: 5px;
+    border: 2px solid;
+    border-color: aquamarine;
+    background-color: #F5F5F5;
+    width: 170px;
+    height: 24px;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+#searchNavigation {
+    margin-top: 120px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+
+#navegationButtons button{
+    font-family: 'JetBrains Mono', monospace;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #0984e3;
+    letter-spacing: 1px;
+    color: #F5F5F5;
+    padding: 5px;
+}
+
+#navegationButtons button:hover{
+    background-color: #74b9ff;
+}
+
+#modal{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: center;
+    height: 480px;
+    width: 900px;
+    display: none;
+    cursor: pointer;
+
+    border-radius: 7px;
+    border: none;
+}
+
+#modal button{
+    font-family: 'JetBrains Mono', monospace;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #0984e3;
+    letter-spacing: 1px;
+    color: #F5F5F5;
+    padding: 10px;
+}
+
+#imageModal{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#modal::backdrop{
+    /* Created with https://www.css-gradient.com */
+    background: #7FFFD4;
+    background: -webkit-linear-gradient(top left, #7FFFD4, #0985E3);
+    background: -moz-linear-gradient(top left, #7FFFD4, #0985E3);
+    background: linear-gradient(to bottom right, #7FFFD4, #0985E3);
+}
+
+#confirmBtn {
+    align-content: center;
+    background-color: #0984e3;
+}
+
+#listAbilities{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+#listMoves{
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+#listAbilities li{
+    width: 140px;
+}
+
+#listMoves li{
+    width: 140px;
+}
